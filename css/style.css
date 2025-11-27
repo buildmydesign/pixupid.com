@@ -8,6 +8,7 @@
     height: 25px;
     line-height: 25px;
     font-weight: bold;
+    letter-spacing: 0.2px;
 }
 
 .features-grid {
@@ -455,6 +456,7 @@ nav ul li a.active {
     margin: 80px auto 60px auto;
     font-weight: bold;
     line-height: 25px;
+    letter-spacing: 0.2px;
 }
 
 .testimonials-grid {
@@ -531,15 +533,14 @@ nav ul li a.active {
 }
 
 .testimonial::after {
-    content: '"';
-    font-family: 'Arial', sans-serif;
-    font-size: 48px;
-    color: var(--accent-orange);
+    content: '';
+    background: url('../assets/images/Icons/Quote.png') no-repeat center;
+    background-size: contain;
+    width: 22px;
+    height: 17px;
     position: absolute;
     bottom: 0;
     right: 0;
-    line-height: 1;
-    font-weight: bold;
 }
 
 /* CTA Section */
