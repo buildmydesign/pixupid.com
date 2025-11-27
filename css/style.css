@@ -798,8 +798,6 @@ footer::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 338px;
-    overflow: hidden;
 }
 
 .service-card:hover {
@@ -830,9 +828,10 @@ footer::before {
     font-size: 16px;
     color: var(--text-black);
     line-height: 1.5;
-    padding: 0 20px 20px 20px;
+    padding: 0 15px 15px 15px;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    flex: 1;
 }
 
 /* Pricing Section */
@@ -969,8 +968,8 @@ footer::before {
 /* Presentations Grid Override */
 .presentations-grid {
     grid-template-columns: repeat(3, 306px);
-    grid-template-rows: 338px;
-    height: 338px;
+    grid-template-rows: auto;
+    height: auto;
 }
 
 /* Tabs Section */
