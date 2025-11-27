@@ -105,8 +105,9 @@ nav::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 901px;
     height: 0.5px;
     background-image: repeating-linear-gradient(
         to right,
@@ -247,8 +248,9 @@ nav ul li a.active {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 901px;
     height: 1px;
     background-image: repeating-linear-gradient(
         to right,
@@ -380,8 +382,9 @@ nav ul li a.active {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 901px;
     height: 1px;
     background-image: repeating-linear-gradient(
         to right,
@@ -397,8 +400,9 @@ nav ul li a.active {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 901px;
     height: 1px;
     background-image: repeating-linear-gradient(
         to right,
@@ -558,8 +562,9 @@ nav ul li a.active {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 901px;
     height: 1px;
     background-image: repeating-linear-gradient(
         to right,
@@ -643,8 +648,9 @@ footer::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 901px;
     height: 1px;
     background-image: repeating-linear-gradient(
         to right,
@@ -722,6 +728,9 @@ footer::before {
     margin: 0 auto;
     background: var(--light-blue);
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .page-title {
@@ -738,7 +747,7 @@ footer::before {
 .page-description {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 18px;
-    color: var(--text-dark);
+    color: var(--text-black);
     line-height: 1.6;
     width: 901px;
     margin: 0;
@@ -757,8 +766,9 @@ footer::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 901px;
     height: 1px;
     background-image: repeating-linear-gradient(
         to right,
@@ -816,7 +826,7 @@ footer::before {
 .service-card p {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 16px;
-    color: var(--text-dark);
+    color: var(--text-black);
     line-height: 1.5;
     padding: 0 10px;
 }
