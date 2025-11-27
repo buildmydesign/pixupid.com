@@ -1108,9 +1108,10 @@ footer::before {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 16px;
     color: var(--text-dark);
-    text-align: left;
-    margin-bottom: 40px;
+    text-align: center;
+    margin: 0 auto 40px auto;
     line-height: 1.6;
+    max-width: 901px;
 }
 
 .tab-description h3 {
@@ -1119,6 +1120,11 @@ footer::before {
     color: var(--dark-blue);
     margin-bottom: 20px;
     font-weight: bold;
+    text-align: center;
+}
+
+.tab-description p {
+    text-align: center;
 }
 
 .comparison-slider {
