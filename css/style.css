@@ -369,7 +369,7 @@ nav ul li a.active {
 
 /* What Makes Us Section */
 .what-makes-us {
-    padding: 60px 0 60px 0;
+    padding: 60px 0 40px 0;
     width: 980px;
     margin: 0 auto;
     background: var(--light-blue);
