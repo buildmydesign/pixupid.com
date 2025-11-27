@@ -254,8 +254,8 @@ nav ul li a.active {
     height: 1px;
     background-image: repeating-linear-gradient(
         to right,
-        var(--text-black) 0px,
-        var(--text-black) 2px,
+        var(--text-light) 0px,
+        var(--text-light) 2px,
         transparent 2px,
         transparent 4px
     );
