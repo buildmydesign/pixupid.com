@@ -270,7 +270,7 @@ nav ul li a.active {
 .service-header .section-logo {
     position: relative;
     width: 130px;
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
     z-index: 1;
 }
 
