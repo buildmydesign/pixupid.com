@@ -1177,6 +1177,136 @@ footer::before {
     display: block;
 }
 
+/* Doodles Collage Section */
+.doodles-collage-section {
+    padding: 60px 0;
+    width: 980px;
+    margin: 0 auto;
+    background: var(--light-blue);
+    position: relative;
+}
+
+.doodles-collage-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 901px;
+    height: 1px;
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--text-light) 0px,
+        var(--text-light) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    z-index: 100;
+}
+
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 240px);
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.collage-container:last-child {
+    margin-bottom: 0;
+}
+
+.collage-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.collage-item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.collage-item.medium {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.collage-item.small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* Doodles Carousel Section */
+.doodles-carousel-section {
+    padding: 60px 0;
+    width: 980px;
+    margin: 0 auto;
+    background: var(--light-blue);
+    position: relative;
+}
+
+.doodles-carousel-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 901px;
+    height: 1px;
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--text-light) 0px,
+        var(--text-light) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    z-index: 100;
+}
+
+.doodles-carousel-section h2 {
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.doodles-carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 500px;
+}
+
+.doodles-carousel-item {
+    display: none;
+    width: 100%;
+}
+
+.doodles-carousel-item.active {
+    display: block;
+}
+
+.doodles-carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Responsive Design */
 @media (max-width: 980px) {
     nav {
