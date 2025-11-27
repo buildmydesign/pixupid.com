@@ -739,7 +739,6 @@ footer::before {
     color: var(--accent-orange);
     margin-bottom: 20px;
     font-weight: normal;
-    width: 600px;
     height: 26px;
     line-height: 26px;
 }
