@@ -715,6 +715,98 @@ footer::before {
     color: var(--text-dark);
 }
 
+/* Page Hero Section */
+.page-hero {
+    padding: 60px 0 40px 0;
+    width: 980px;
+    margin: 0 auto;
+    background: var(--light-blue);
+    text-align: center;
+}
+
+.page-title {
+    font-family: 'Nexa Script', cursive;
+    font-size: 48px;
+    color: var(--accent-orange);
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.page-description {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.6;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Services Grid Section */
+.services-grid-section {
+    padding: 60px 0;
+    width: 980px;
+    margin: 0 auto;
+    background: var(--light-blue);
+    position: relative;
+}
+
+.services-grid-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--text-black) 0px,
+        var(--text-black) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    z-index: 100;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+}
+
+.service-card {
+    background: var(--white);
+    text-align: center;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding: 0 15px 20px 15px;
+}
+
 /* Responsive Design */
 @media (max-width: 980px) {
     nav {
