@@ -219,6 +219,23 @@ nav ul li a.active {
     width: 980px;
     margin: 0 auto;
     background: var(--light-blue);
+    position: relative;
+}
+
+.service-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--text-black) 0px,
+        var(--text-black) 2px,
+        transparent 2px,
+        transparent 4px
+    );
 }
 
 .service-section:nth-child(even) {
@@ -234,22 +251,6 @@ nav ul li a.active {
     overflow: visible;
     width: 980px;
     margin: 0 auto;
-}
-
-.service-header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-image: repeating-linear-gradient(
-        to right,
-        var(--text-black) 0px,
-        var(--text-black) 2px,
-        transparent 2px,
-        transparent 4px
-    );
 }
 
 .header-bg {
