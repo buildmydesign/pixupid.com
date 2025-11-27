@@ -236,6 +236,7 @@ nav ul li a.active {
         transparent 2px,
         transparent 4px
     );
+    z-index: 10;
 }
 
 .service-section:nth-child(even) {
