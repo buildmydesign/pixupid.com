@@ -717,28 +717,31 @@ footer::before {
 
 /* Page Hero Section */
 .page-hero {
-    padding: 60px 0 40px 0;
+    padding: 40px 0 40px 0;
     width: 980px;
     margin: 0 auto;
     background: var(--light-blue);
-    text-align: center;
+    text-align: left;
 }
 
 .page-title {
     font-family: 'Nexa Script', cursive;
-    font-size: 48px;
+    font-size: 22px;
     color: var(--accent-orange);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: normal;
+    width: 600px;
+    height: 26px;
+    line-height: 26px;
 }
 
 .page-description {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--text-dark);
     line-height: 1.6;
-    max-width: 850px;
-    margin: 0 auto;
+    width: 901px;
+    margin: 0;
 }
 
 /* Services Grid Section */
@@ -769,16 +772,21 @@ footer::before {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    width: 100%;
+    grid-template-columns: repeat(3, 306px);
+    grid-template-rows: repeat(2, 338px);
+    gap: 6px;
+    width: 930px;
+    height: 679px;
+    margin: 0 auto;
 }
 
 .service-card {
     background: var(--white);
     text-align: center;
-    padding: 0;
+    padding: 10px;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-card:hover {
@@ -788,14 +796,16 @@ footer::before {
 .service-card img {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    border: 8px solid var(--white);
+    box-sizing: border-box;
 }
 
 .service-card h3 {
     font-family: 'Armata', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--dark-blue);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
@@ -803,8 +813,8 @@ footer::before {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 16px;
     color: var(--text-dark);
-    line-height: 1.6;
-    padding: 0 15px 20px 15px;
+    line-height: 1.5;
+    padding: 0 10px;
 }
 
 /* Responsive Design */
