@@ -348,7 +348,7 @@ nav ul li a.active {
 
 /* What Makes Us Section */
 .what-makes-us {
-    padding: 0;
+    padding: 60px 0 0 0;
     width: 980px;
     margin: 0 auto 60px auto;
     background: var(--light-blue);
@@ -394,7 +394,7 @@ nav ul li a.active {
     font-family: 'Armata', sans-serif;
     font-size: 20px;
     color: var(--dark-blue);
-    margin: 80px auto 37px auto;
+    margin: 20px auto 37px auto;
     width: 940px;
     height: 25px;
     line-height: 25px;
