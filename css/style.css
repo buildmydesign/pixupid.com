@@ -13,11 +13,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Nexa Script';
+    src: url('../assets/fonts/NexaScript-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* CSS Variables */
 :root {
     --primary-blue: #4A90E2;
     --dark-blue: #2C5AA0;
     --light-blue: #E8F4FF;
+    --accent-orange: #D4851B;
     --text-dark: #333333;
     --text-light: #666666;
     --white: #FFFFFF;
@@ -55,6 +63,52 @@ img {
     padding: 0 20px;
 }
 
+/* Navigation */
+nav {
+    background: var(--white);
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 2px dotted var(--text-light);
+}
+
+nav .logo {
+    width: 100px;
+    margin: 0 auto 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    padding: 0 20px;
+    position: relative;
+}
+
+nav ul li:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: var(--text-dark);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-family: 'Didact Gothic', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--accent-orange);
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -82,28 +136,25 @@ img {
     z-index: 1;
 }
 
-.hero .logo {
-    width: 130px;
-    margin: 0 auto 40px;
-}
-
 .hero h1 {
-    font-size: 2.5rem;
-    color: var(--dark-blue);
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
 }
 
 .hero .tagline {
-    font-size: 1.5rem;
-    color: var(--primary-blue);
-    margin-bottom: 30px;
-    font-weight: 600;
+    font-family: 'Nexa Script', cursive;
+    font-size: 2.5rem;
+    color: var(--accent-orange);
+    margin-bottom: 40px;
+    font-weight: normal;
 }
 
 .hero .mission {
-    font-size: 1.2rem;
-    color: var(--text-light);
+    font-size: 1.1rem;
+    color: var(--text-dark);
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
@@ -149,16 +200,18 @@ img {
 
 .service-header h2 {
     position: relative;
-    font-size: 2.5rem;
-    color: var(--dark-blue);
+    font-family: 'Nexa Script', cursive;
+    font-size: 3rem;
+    color: var(--text-dark);
     margin-bottom: 20px;
     z-index: 1;
+    font-weight: normal;
 }
 
 .service-header p {
     position: relative;
-    font-size: 1.2rem;
-    color: var(--text-light);
+    font-size: 1.1rem;
+    color: var(--text-dark);
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.8;
@@ -384,12 +437,25 @@ img {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul li {
+        padding: 0;
+    }
+
+    nav ul li:not(:last-child)::after {
+        content: none;
+    }
+
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .hero .tagline {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .hero .mission {
@@ -397,7 +463,7 @@ img {
     }
 
     .service-header h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .service-header p {
@@ -441,7 +507,11 @@ img {
     }
 
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .hero .tagline {
+        font-size: 1.6rem;
     }
 
     .service-section {
