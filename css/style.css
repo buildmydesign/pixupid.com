@@ -228,7 +228,7 @@ nav ul li a.active {
 .service-header {
     position: relative;
     text-align: center;
-    padding: 60px 0 20px 0;
+    padding: 40px 0 20px 0;
     margin-bottom: 0;
     background: var(--light-blue);
     overflow: visible;
@@ -242,7 +242,7 @@ nav ul li a.active {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0.5px;
+    height: 1px;
     background-image: repeating-linear-gradient(
         to right,
         var(--text-black) 0px,
