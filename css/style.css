@@ -910,6 +910,7 @@ footer::before {
 .pricing-table tbody td:first-child {
     text-align: left;
     font-weight: normal;
+    width: 350px;
 }
 
 .delivery-note,
