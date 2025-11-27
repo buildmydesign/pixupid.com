@@ -442,39 +442,61 @@ nav ul li a.active {
 
 /* Testimonials Section */
 .testimonials {
-    padding: 0;
+    padding: 60px 0 0 0;
     width: 980px;
     margin: 0 auto;
     background: var(--light-blue);
+    position: relative;
+}
+
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--text-black) 0px,
+        var(--text-black) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    z-index: 100;
 }
 
 .testimonials h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
     color: var(--dark-blue);
-    margin-bottom: 80px;
+    margin: 20px auto 60px auto;
+    font-weight: bold;
+    line-height: 25px;
 }
 
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 490px);
+    grid-template-rows: repeat(3, auto);
+    gap: 40px 0;
+    width: 980px;
+    margin: 0 auto 60px auto;
 }
 
 .testimonial {
     text-align: center;
-    padding: 30px;
-    background: var(--white);
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
 }
 
 .testimonial:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: none;
+    box-shadow: none;
 }
 
 .testimonial img {
@@ -483,22 +505,27 @@ nav ul li a.active {
     border-radius: 50%;
     margin: 0 auto 20px;
     object-fit: cover;
-    border: 3px solid var(--primary-blue);
+    border: none;
 }
 
 .testimonial h4 {
-    font-size: 1rem;
+    font-family: 'Armata', sans-serif;
+    font-size: 16px;
     color: var(--primary-blue);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .testimonial p {
-    font-size: 1rem;
-    color: var(--text-light);
-    line-height: 1.8;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.6;
     font-style: italic;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 /* CTA Section */
