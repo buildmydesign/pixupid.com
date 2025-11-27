@@ -23,9 +23,9 @@
 /* CSS Variables */
 :root {
     --primary-blue: #4A90E2;
-    --dark-blue: #2C5AA0;
+    --dark-blue: #040F4F;
     --light-blue: #E8F4FF;
-    --accent-orange: #D4851B;
+    --accent-orange: #D18509;
     --text-dark: #333333;
     --text-light: #666666;
     --white: #FFFFFF;
@@ -44,6 +44,8 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
+    background-attachment: fixed;
 }
 
 h1, h2, h3, h4 {
@@ -66,27 +68,53 @@ img {
 /* Navigation */
 nav {
     background: var(--white);
-    padding: 30px 0;
+    padding: 27px 0;
     text-align: center;
-    border-bottom: 2px dotted var(--text-light);
+    position: relative;
+}
+
+nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1100px;
+    height: 2px;
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--text-light) 0px,
+        var(--text-light) 5px,
+        transparent 5px,
+        transparent 10px
+    );
 }
 
 nav .logo {
-    width: 100px;
-    margin: 0 auto 20px;
+    width: 130px;
+    height: 38px;
+    margin: 0 auto 27px;
+    object-fit: contain;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0;
     flex-wrap: wrap;
+    width: 688px;
+    height: 24px;
+    margin: 0 auto;
 }
 
 nav ul li {
     padding: 0 20px;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li:not(:last-child)::after {
@@ -94,14 +122,16 @@ nav ul li:not(:last-child)::after {
     position: absolute;
     right: 0;
     color: var(--text-dark);
+    font-size: 16px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--text-dark);
-    font-size: 1rem;
+    font-size: 16px;
     font-family: 'Didact Gothic', sans-serif;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 nav ul li a:hover,
@@ -113,8 +143,7 @@ nav ul li a.active {
 .hero {
     position: relative;
     text-align: center;
-    padding: 80px 20px 120px;
-    background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
+    padding: 223px 20px 120px;
     overflow: hidden;
 }
 
@@ -137,27 +166,40 @@ nav ul li a.active {
 }
 
 .hero h1 {
-    font-size: 2.2rem;
-    color: var(--text-dark);
-    margin-bottom: 30px;
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin-bottom: 22px;
     letter-spacing: 0.5px;
     font-weight: normal;
+    width: 738px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 25px;
 }
 
 .hero .tagline {
     font-family: 'Nexa Script', cursive;
-    font-size: 2.5rem;
+    font-size: 22px;
     color: var(--accent-orange);
-    margin-bottom: 40px;
+    margin-bottom: 47px;
     font-weight: normal;
+    width: 738px;
+    height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 26px;
 }
 
 .hero .mission {
-    font-size: 1.1rem;
-    color: var(--text-dark);
-    max-width: 800px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 22px;
+    color: var(--accent-orange);
+    width: 794px;
+    height: 25px;
     margin: 0 auto;
-    line-height: 1.8;
+    line-height: 25px;
 }
 
 /* Service Sections */
@@ -440,6 +482,8 @@ nav ul li a.active {
     nav ul {
         flex-direction: column;
         gap: 15px;
+        width: auto;
+        height: auto;
     }
 
     nav ul li {
@@ -450,16 +494,23 @@ nav ul li a.active {
         content: none;
     }
 
+    .hero {
+        padding: 100px 20px 80px;
+    }
+
     .hero h1 {
-        font-size: 1.6rem;
+        font-size: 18px;
+        width: 100%;
     }
 
     .hero .tagline {
-        font-size: 2rem;
+        font-size: 20px;
+        width: 100%;
     }
 
     .hero .mission {
-        font-size: 1rem;
+        font-size: 18px;
+        width: 100%;
     }
 
     .service-header h2 {
@@ -507,11 +558,15 @@ nav ul li a.active {
     }
 
     .hero h1 {
-        font-size: 1.3rem;
+        font-size: 16px;
     }
 
     .hero .tagline {
-        font-size: 1.6rem;
+        font-size: 18px;
+    }
+
+    .hero .mission {
+        font-size: 16px;
     }
 
     .service-section {
