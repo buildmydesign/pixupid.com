@@ -27,6 +27,7 @@
     --light-blue: #E8F4FF;
     --accent-orange: #D18509;
     --text-dark: #333333;
+    --text-black: #000000;
     --text-light: #666666;
     --white: #FFFFFF;
     --gray-light: #F5F5F5;
@@ -67,7 +68,7 @@ img {
 
 /* Navigation */
 nav {
-    background: var(--white);
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
     width: 980px;
     height: 134px;
     margin: 0 auto;
@@ -88,7 +89,7 @@ nav::after {
     transform: translateX(-50%);
     width: 90%;
     max-width: 880px;
-    height: 2px;
+    height: 1px;
     background-image: repeating-linear-gradient(
         to right,
         var(--text-light) 0px,
@@ -101,24 +102,23 @@ nav::after {
 nav .logo {
     width: 130px;
     height: 38px;
-    margin: 0 auto 27px;
+    margin: 0 auto 20px;
     object-fit: contain;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 0;
     flex-wrap: wrap;
-    width: 688px;
+    width: 720px;
     height: 24px;
     margin: 0 auto;
 }
 
 nav ul li {
-    padding: 0 20px;
     position: relative;
     display: flex;
     align-items: center;
@@ -127,7 +127,7 @@ nav ul li {
 nav ul li:not(:last-child)::after {
     content: '|';
     position: absolute;
-    right: 0;
+    right: -15px;
     color: var(--text-dark);
     font-size: 16px;
 }
@@ -175,43 +175,43 @@ nav ul li a.active {
 .hero .container {
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .hero h1 {
     font-family: 'Armata', sans-serif;
     font-size: 20px;
     color: var(--dark-blue);
-    margin-bottom: 22px;
     letter-spacing: 0.5px;
     font-weight: normal;
     width: 738px;
     height: 25px;
-    margin-left: auto;
-    margin-right: auto;
     line-height: 25px;
+    margin: 0;
 }
 
 .hero .tagline {
     font-family: 'Nexa Script', cursive;
     font-size: 22px;
     color: var(--accent-orange);
-    margin-bottom: 47px;
     font-weight: normal;
     width: 738px;
     height: 26px;
-    margin-left: auto;
-    margin-right: auto;
     line-height: 26px;
+    margin: 0;
 }
 
 .hero .mission {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 22px;
-    color: var(--accent-orange);
+    font-size: 18px;
+    color: var(--text-black);
     width: 794px;
-    height: 25px;
-    margin: 0 auto;
-    line-height: 25px;
+    line-height: 1.4;
+    margin: 0;
 }
 
 /* Service Sections */
@@ -518,20 +518,26 @@ nav ul li a.active {
         padding: 80px 20px;
     }
 
+    .hero .container {
+        gap: 20px;
+    }
+
     .hero h1 {
         font-size: 18px;
         width: 100%;
         max-width: 738px;
+        height: auto;
     }
 
     .hero .tagline {
         font-size: 20px;
         width: 100%;
         max-width: 738px;
+        height: auto;
     }
 
     .hero .mission {
-        font-size: 18px;
+        font-size: 16px;
         width: 100%;
         max-width: 794px;
     }
@@ -587,7 +593,7 @@ nav ul li a.active {
     }
 
     .hero .mission {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .service-section {
