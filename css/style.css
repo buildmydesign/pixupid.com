@@ -461,7 +461,7 @@ nav ul li a.active {
     display: grid;
     grid-template-columns: repeat(2, 490px);
     grid-template-rows: repeat(3, auto);
-    gap: 60px 73px;
+    gap: 30px 73px;
     width: 980px;
     margin: 0 auto 60px auto;
 }
