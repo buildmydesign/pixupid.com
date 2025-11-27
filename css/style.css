@@ -727,10 +727,10 @@ footer::before {
     width: 980px;
     margin: 0 auto;
     background: var(--light-blue);
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .page-title {
@@ -751,6 +751,7 @@ footer::before {
     line-height: 1.6;
     width: 901px;
     margin: 0;
+    text-align: left;
 }
 
 /* Services Grid Section */
@@ -877,9 +878,9 @@ footer::before {
 .pricing-table thead th {
     background: #E8D7C3;
     font-family: 'Armata', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-black);
-    padding: 15px;
+    padding: 12px 15px;
     text-align: center;
     font-weight: normal;
 }
@@ -900,7 +901,7 @@ footer::before {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 16px;
     color: var(--text-black);
-    padding: 15px;
+    padding: 10px 15px;
     text-align: center;
 }
 
