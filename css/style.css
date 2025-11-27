@@ -348,46 +348,77 @@ nav ul li a.active {
 
 /* What Makes Us Section */
 .what-makes-us {
-    padding: 100px 0;
-    background-color: var(--white);
+    padding: 0;
+    width: 980px;
+    margin: 0 auto;
+    background: var(--light-blue);
+    position: relative;
+}
+
+.what-makes-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--text-black) 0px,
+        var(--text-black) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    z-index: 100;
 }
 
 .what-makes-us h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
     color: var(--dark-blue);
-    margin-bottom: 80px;
+    margin: 60px auto 37px auto;
+    width: 940px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: normal;
 }
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 296.67px);
+    gap: 0;
+    width: 890px;
+    height: 339px;
+    margin: 0 auto 60px auto;
+    padding: 0;
 }
 
 .feature {
     text-align: center;
-    padding: 30px;
+    padding: 0;
 }
 
 .feature img {
     width: 78px;
     height: 71px;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
 }
 
 .feature h3 {
-    font-size: 1.8rem;
+    font-family: 'Armata', sans-serif;
+    font-size: 18px;
     color: var(--dark-blue);
     margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 1.2;
 }
 
 .feature p {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    line-height: 1.8;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.5;
 }
 
 /* Testimonials Section */
