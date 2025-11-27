@@ -54,6 +54,8 @@
 
     <!-- Tabs Section -->
     <section class="tabs-section">
+        <h2 style="font-family: 'Armata', sans-serif; font-size: 20px; color: var(--dark-blue); text-align: center; margin-bottom: 40px; font-weight: bold;">We redesign visuals, create a storyboard narrative, or start from scratch</h2>
+        
         <div class="tabs-header">
             <button class="tab-button active" data-tab="redesign">Redesign</button>
             <button class="tab-button" data-tab="rewrite">Rewrite</button>
@@ -62,82 +64,214 @@
 
         <!-- Redesign Tab Content -->
         <div class="tab-content active" id="redesign">
+            <div class="tab-description">
+                <h3>Redesign</h3>
+                <p>If you want to visually transform your slides into a more impressive and professional presentation with creative layouts, standardized styles and editable content, go for Redesign.</p>
+            </div>
+            
             <div class="before-after-container">
-                <div class="before-after-item">
+                <button class="carousel-arrow left" data-carousel="redesign">&lt;</button>
+                
+                <div class="before-after-item active" data-carousel="redesign">
                     <div class="comparison-slider">
-                        <img src="assets/images/Presentations/Slide1.JPG" alt="Before" class="before-image">
-                        <img src="assets/images/Presentations/Slide2.JPG" alt="After" class="after-image">
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                        <div class="slide-half">
+                            <div class="slide-label before">Before</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide1.JPG" alt="Before">
+                            </div>
+                        </div>
+                        <div class="slide-half">
+                            <div class="slide-label after">After</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide2.JPG" alt="After">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="before-after-item">
+                
+                <div class="before-after-item" data-carousel="redesign">
                     <div class="comparison-slider">
-                        <img src="assets/images/Presentations/Slide3.JPG" alt="Before" class="before-image">
-                        <img src="assets/images/Presentations/Slide4.JPG" alt="After" class="after-image">
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                        <div class="slide-half">
+                            <div class="slide-label before">Before</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide3.JPG" alt="Before">
+                            </div>
+                        </div>
+                        <div class="slide-half">
+                            <div class="slide-label after">After</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide4.JPG" alt="After">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="before-after-item">
+                
+                <div class="before-after-item" data-carousel="redesign">
                     <div class="comparison-slider">
-                        <img src="assets/images/Presentations/Slide5.JPG" alt="Before" class="before-image">
-                        <img src="assets/images/Presentations/Slide6.JPG" alt="After" class="after-image">
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                        <div class="slide-half">
+                            <div class="slide-label before">Before</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide5.JPG" alt="Before">
+                            </div>
+                        </div>
+                        <div class="slide-half">
+                            <div class="slide-label after">After</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide6.JPG" alt="After">
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
+                <button class="carousel-arrow right" data-carousel="redesign">&gt;</button>
+            </div>
+            
+            <div class="carousel-dots" data-carousel="redesign">
+                <button class="carousel-dot active" data-index="0"></button>
+                <button class="carousel-dot" data-index="1"></button>
+                <button class="carousel-dot" data-index="2"></button>
             </div>
         </div>
 
         <!-- Rewrite Tab Content -->
         <div class="tab-content" id="rewrite">
+            <div class="tab-description">
+                <h3>Rewrite</h3>
+                <p>If you want to visually transform your slides into a more impressive and professional presentation with creative layouts, standardized styles and editable content, go for Redesign.</p>
+            </div>
+            
             <div class="before-after-container">
-                <div class="before-after-item">
+                <button class="carousel-arrow left" data-carousel="rewrite">&lt;</button>
+                
+                <div class="before-after-item active" data-carousel="rewrite">
                     <div class="comparison-slider">
-                        <img src="assets/images/Presentations/Slide1.JPG" alt="Before" class="before-image">
-                        <img src="assets/images/Presentations/Slide2.JPG" alt="After" class="after-image">
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                        <div class="slide-half">
+                            <div class="slide-label before">Before</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide1.JPG" alt="Before">
+                            </div>
+                        </div>
+                        <div class="slide-half">
+                            <div class="slide-label after">After</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide2.JPG" alt="After">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="before-after-item">
+                
+                <div class="before-after-item" data-carousel="rewrite">
                     <div class="comparison-slider">
-                        <img src="assets/images/Presentations/Slide3.JPG" alt="Before" class="before-image">
-                        <img src="assets/images/Presentations/Slide4.JPG" alt="After" class="after-image">
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                        <div class="slide-half">
+                            <div class="slide-label before">Before</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide3.JPG" alt="Before">
+                            </div>
+                        </div>
+                        <div class="slide-half">
+                            <div class="slide-label after">After</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide4.JPG" alt="After">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="before-after-item">
+                
+                <div class="before-after-item" data-carousel="rewrite">
                     <div class="comparison-slider">
-                        <img src="assets/images/Presentations/Slide5.JPG" alt="Before" class="before-image">
-                        <img src="assets/images/Presentations/Slide6.JPG" alt="After" class="after-image">
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                        <div class="slide-half">
+                            <div class="slide-label before">Before</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide5.JPG" alt="Before">
+                            </div>
+                        </div>
+                        <div class="slide-half">
+                            <div class="slide-label after">After</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide6.JPG" alt="After">
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
+                <button class="carousel-arrow right" data-carousel="rewrite">&gt;</button>
+            </div>
+            
+            <div class="carousel-dots" data-carousel="rewrite">
+                <button class="carousel-dot active" data-index="0"></button>
+                <button class="carousel-dot" data-index="1"></button>
+                <button class="carousel-dot" data-index="2"></button>
             </div>
         </div>
 
         <!-- Recreate Tab Content -->
         <div class="tab-content" id="recreate">
+            <div class="tab-description">
+                <h3>Recreate</h3>
+                <p>If you want to visually transform your slides into a more impressive and professional presentation with creative layouts, standardized styles and editable content, go for Redesign.</p>
+            </div>
+            
             <div class="before-after-container">
-                <div class="before-after-item">
+                <button class="carousel-arrow left" data-carousel="recreate">&lt;</button>
+                
+                <div class="before-after-item active" data-carousel="recreate">
                     <div class="comparison-slider">
-                        <img src="assets/images/Presentations/Slide1.JPG" alt="Before" class="before-image">
-                        <img src="assets/images/Presentations/Slide2.JPG" alt="After" class="after-image">
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                        <div class="slide-half">
+                            <div class="slide-label before">Before</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide1.JPG" alt="Before">
+                            </div>
+                        </div>
+                        <div class="slide-half">
+                            <div class="slide-label after">After</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide2.JPG" alt="After">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="before-after-item">
+                
+                <div class="before-after-item" data-carousel="recreate">
                     <div class="comparison-slider">
-                        <img src="assets/images/Presentations/Slide3.JPG" alt="Before" class="before-image">
-                        <img src="assets/images/Presentations/Slide4.JPG" alt="After" class="after-image">
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                        <div class="slide-half">
+                            <div class="slide-label before">Before</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide3.JPG" alt="Before">
+                            </div>
+                        </div>
+                        <div class="slide-half">
+                            <div class="slide-label after">After</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide4.JPG" alt="After">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="before-after-item">
+                
+                <div class="before-after-item" data-carousel="recreate">
                     <div class="comparison-slider">
-                        <img src="assets/images/Presentations/Slide5.JPG" alt="Before" class="before-image">
-                        <img src="assets/images/Presentations/Slide6.JPG" alt="After" class="after-image">
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
+                        <div class="slide-half">
+                            <div class="slide-label before">Before</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide5.JPG" alt="Before">
+                            </div>
+                        </div>
+                        <div class="slide-half">
+                            <div class="slide-label after">After</div>
+                            <div class="slide-image-container">
+                                <img src="assets/images/Presentations/Slide6.JPG" alt="After">
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
+                <button class="carousel-arrow right" data-carousel="recreate">&gt;</button>
+            </div>
+            
+            <div class="carousel-dots" data-carousel="recreate">
+                <button class="carousel-dot active" data-index="0"></button>
+                <button class="carousel-dot" data-index="1"></button>
+                <button class="carousel-dot" data-index="2"></button>
             </div>
         </div>
     </section>
