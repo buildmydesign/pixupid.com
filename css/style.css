@@ -304,11 +304,11 @@ nav ul li a.active {
 /* Portfolio Grid */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 326.67px);
-    grid-template-rows: repeat(2, 490px);
+    grid-template-columns: repeat(2, 490px);
+    grid-template-rows: repeat(3, 488.67px);
     gap: 0;
     width: 980px;
-    height: 980px;
+    height: 1466px;
     margin: 0 auto 60px auto;
     padding: 0;
 }
@@ -317,6 +317,7 @@ nav ul li a.active {
 .branding-section .portfolio-grid {
     grid-template-columns: repeat(2, 490px);
     grid-template-rows: repeat(2, 490px);
+    height: 980px;
 }
 
 .portfolio-item {
