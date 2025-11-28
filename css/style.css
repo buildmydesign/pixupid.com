@@ -1269,8 +1269,38 @@ footer::before {
     font-size: 20px;
     color: var(--dark-blue);
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-weight: bold;
+}
+
+.doodle-pricing-header {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 30px;
+}
+
+.pricing-column {
+    text-align: center;
+}
+
+.doodle-type {
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.doodle-type.epic {
+    color: #FF1493;
+}
+
+.doodle-price {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-black);
+    margin: 0;
 }
 
 .doodles-carousel-container {
@@ -1303,39 +1333,35 @@ footer::before {
 
 .doodle-pair {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .doodle-single {
-    text-align: center;
     flex: 1;
     max-width: 400px;
+    background: white;
+    padding: 10px;
 }
 
-.doodle-type {
-    font-family: 'Armata', sans-serif;
-    font-size: 20px;
-    color: var(--dark-blue);
-    margin-bottom: 10px;
-    font-weight: bold;
+.doodle-features {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.doodle-price {
+.feature-column {
+    text-align: left;
+}
+
+.feature-column p {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-black);
-    margin-bottom: 20px;
-    font-weight: normal;
-}
-
-.doodle-description {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 14px;
-    color: var(--text-dark);
-    margin-top: 10px;
-    font-style: italic;
+    margin: 5px 0;
 }
 
 .doodle-note {
