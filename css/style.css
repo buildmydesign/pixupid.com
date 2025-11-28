@@ -1206,14 +1206,23 @@ footer::before {
 
 .collage-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 240px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 300px;
     gap: 10px;
     margin-bottom: 60px;
 }
 
 .collage-container:last-child {
     margin-bottom: 0;
+}
+
+.collage-title {
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
 }
 
 .collage-item {
@@ -1226,21 +1235,6 @@ footer::before {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-.collage-item.large {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.collage-item.medium {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.collage-item.small {
-    grid-column: span 1;
-    grid-row: span 1;
 }
 
 /* Doodles Carousel Section */
@@ -1299,12 +1293,18 @@ footer::before {
 }
 
 .doodles-carousel-item img {
-    width: 100%;
+    width: 48%;
     height: auto;
     max-height: 600px;
     object-fit: contain;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+}
+
+.doodle-pair {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsive Design */
