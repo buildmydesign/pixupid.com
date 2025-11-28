@@ -1275,9 +1275,10 @@ footer::before {
 
 .doodle-pricing-header {
     display: flex;
-    justify-content: center;
-    gap: 200px;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: 0 auto 10px auto;
+    padding: 0 50px;
 }
 
 .pricing-column {
@@ -1306,11 +1307,17 @@ footer::before {
 .doodles-carousel-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    max-width: 850px;
+    justify-content: space-between;
+    max-width: 980px;
     margin: 0 auto;
     position: relative;
     min-height: auto;
+}
+
+.doodles-carousel-container .carousel-arrow {
+    position: static;
+    transform: none;
+    margin: 0 20px;
 }
 
 .doodles-carousel-item {
@@ -1336,6 +1343,7 @@ footer::before {
     gap: 30px;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .doodle-single {
