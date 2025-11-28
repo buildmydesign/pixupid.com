@@ -1322,11 +1322,11 @@ footer::before {
 }
 
 .doodles-carousel-container .carousel-arrow.left {
-    left: 20px;
+    left: 60px;
 }
 
 .doodles-carousel-container .carousel-arrow.right {
-    right: 20px;
+    right: 60px;
 }
 
 .doodles-carousel-item {
@@ -1365,7 +1365,7 @@ footer::before {
     font-family: 'Armata', sans-serif;
     font-size: 20px;
     color: var(--dark-blue);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
     text-align: center;
     background: var(--light-blue);
@@ -1379,7 +1379,7 @@ footer::before {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 16px;
     color: var(--text-black);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
     background: var(--light-blue);
 }
