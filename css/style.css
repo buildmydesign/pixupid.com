@@ -1554,31 +1554,27 @@ footer::before {
     margin: 5px 0;
 }
 
+/* Contact Hero Section */
+.contact-hero {
+    padding: 40px 0 20px 0;
+}
+
+.contact-page-title {
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
 /* Contact Form Section */
 .contact-form-section {
-    padding: 60px 0;
+    padding: 40px 0 60px 0;
     width: 980px;
     margin: 0 auto;
     background: var(--light-blue);
     position: relative;
-}
-
-.contact-form-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 901px;
-    height: 1px;
-    background-image: repeating-linear-gradient(
-        to right,
-        var(--text-light) 0px,
-        var(--text-light) 2px,
-        transparent 2px,
-        transparent 4px
-    );
-    z-index: 100;
 }
 
 .contact-container {
