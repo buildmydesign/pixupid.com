@@ -1554,6 +1554,106 @@ footer::before {
     margin: 5px 0;
 }
 
+/* Contact Form Section */
+.contact-form-section {
+    padding: 60px 0;
+    width: 980px;
+    margin: 0 auto;
+    background: var(--light-blue);
+    position: relative;
+}
+
+.contact-form-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 901px;
+    height: 1px;
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--text-light) 0px,
+        var(--text-light) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    z-index: 100;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: var(--light-blue);
+    padding: 0;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-black);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-black);
+    background: var(--light-blue);
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--dark-blue);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-btn {
+    background: var(--accent-orange);
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.submit-btn:hover {
+    background: #b56f07;
+}
+
 /* Responsive Design */
 @media (max-width: 980px) {
     nav {
