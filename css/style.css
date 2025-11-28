@@ -1719,6 +1719,76 @@ footer::before {
     text-align: left;
 }
 
+/* Refund Policy Page */
+.refund-hero {
+    padding: 40px 0 20px 0;
+}
+
+.refund-page-title {
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.refund-content-section {
+    padding: 40px 0 60px 0;
+    width: 980px;
+    margin: 0 auto;
+    background: var(--light-blue);
+}
+
+.refund-container {
+    max-width: 901px;
+    margin: 0 auto;
+}
+
+.refund-content-section p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-black);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Privacy Policy Page */
+.privacy-hero {
+    padding: 40px 0 20px 0;
+}
+
+.privacy-page-title {
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.privacy-content-section {
+    padding: 40px 0 60px 0;
+    width: 980px;
+    margin: 0 auto;
+    background: var(--light-blue);
+}
+
+.privacy-container {
+    max-width: 901px;
+    margin: 0 auto;
+}
+
+.privacy-content-section p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-black);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
 /* Responsive Design */
 @media (max-width: 980px) {
     nav {
