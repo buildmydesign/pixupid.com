@@ -1322,11 +1322,11 @@ footer::before {
 }
 
 .doodles-carousel-container .carousel-arrow.left {
-    left: 60px;
+    left: 30px;
 }
 
 .doodles-carousel-container .carousel-arrow.right {
-    right: 60px;
+    right: 30px;
 }
 
 .doodles-carousel-item {
