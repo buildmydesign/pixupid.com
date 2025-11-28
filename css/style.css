@@ -1360,6 +1360,28 @@ footer::before {
     max-width: 400px;
     background: white;
     padding: 10px;
+    text-align: center;
+}
+
+.doodle-label {
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.doodle-label.epic {
+    color: inherit;
+}
+
+.doodle-price-label {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-black);
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .doodle-features {
