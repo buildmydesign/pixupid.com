@@ -1789,6 +1789,29 @@ footer::before {
     text-align: left;
 }
 
+.privacy-content-section h2 {
+    font-family: 'Armata', sans-serif;
+    font-size: 18px;
+    color: var(--text-black);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.privacy-content-section ul {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: var(--text-black);
+    line-height: 1.6;
+    margin: 10px 0 20px 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.privacy-content-section li {
+    margin: 5px 0;
+}
+
 /* Responsive Design */
 @media (max-width: 980px) {
     nav {
