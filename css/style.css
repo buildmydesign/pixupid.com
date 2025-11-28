@@ -1277,7 +1277,7 @@ footer::before {
     display: flex;
     justify-content: center;
     gap: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .pricing-column {
@@ -1310,7 +1310,7 @@ footer::before {
     max-width: 850px;
     margin: 0 auto;
     position: relative;
-    min-height: 400px;
+    min-height: auto;
 }
 
 .doodles-carousel-item {
@@ -1349,8 +1349,8 @@ footer::before {
     display: flex;
     justify-content: center;
     gap: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .feature-column {
@@ -1369,7 +1369,7 @@ footer::before {
     font-size: 14px;
     color: var(--text-dark);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     font-style: normal;
 }
 
