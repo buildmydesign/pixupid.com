@@ -1277,7 +1277,7 @@ footer::before {
     display: flex;
     justify-content: center;
     gap: 200px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .pricing-column {
@@ -1293,7 +1293,7 @@ footer::before {
 }
 
 .doodle-type.epic {
-    color: #FF1493;
+    color: inherit;
 }
 
 .doodle-price {
@@ -1310,7 +1310,7 @@ footer::before {
     max-width: 850px;
     margin: 0 auto;
     position: relative;
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .doodles-carousel-item {
@@ -1349,8 +1349,8 @@ footer::before {
     display: flex;
     justify-content: center;
     gap: 200px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .feature-column {
@@ -1369,8 +1369,8 @@ footer::before {
     font-size: 14px;
     color: var(--text-dark);
     text-align: center;
-    margin-top: 40px;
-    font-style: italic;
+    margin-top: 20px;
+    font-style: normal;
 }
 
 /* Responsive Design */
