@@ -1045,6 +1045,32 @@ footer::before {
     position: relative;
 }
 
+.before-after-container .carousel-arrow {
+    position: absolute;
+    top: calc(50% + 20px);
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 15px 20px;
+    cursor: pointer;
+    z-index: 20;
+    transition: background 0.3s ease;
+}
+
+.before-after-container .carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.before-after-container .carousel-arrow.left {
+    left: 20px;
+}
+
+.before-after-container .carousel-arrow.right {
+    right: 20px;
+}
+
 .before-after-item {
     display: none;
     width: 100%;
@@ -1316,9 +1342,20 @@ footer::before {
 
 .doodles-carousel-container .carousel-arrow {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 20px);
     transform: translateY(-50%);
     z-index: 20;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.doodles-carousel-container .carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .doodles-carousel-container .carousel-arrow.left {
