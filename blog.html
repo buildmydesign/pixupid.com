@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Pixupid</title>
-    <meta name="description" content="Get in touch with Pixupid for your design needs.">
+    <title>Blog | Pixupid</title>
+    <meta name="description" content="Read our blog for insights on presentation design and branding.">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -19,75 +18,51 @@
                 <li><a href="presentations.html">Presentations</a></li>
                 <li><a href="doodles.html">Doodles</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Contact Hero Section -->
-    <section class="page-hero contact-hero">
+    <!-- Blog Hero Section -->
+    <section class="page-hero blog-hero">
         <div class="container">
-            <h1 class="contact-page-title">Contact</h1>
-            <p class="page-description">Ready to start your next design project? We'd love to hear from you! Fill out the form below and we'll get back to you.</p>
+            <h1 class="blog-page-title">Blog</h1>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
-        <div class="contact-container">
-            <form class="contact-form" action="https://formspree.io/f/mzzlkkey" method="POST" id="contactForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
+    <!-- Blog Posts Section -->
+    <section class="blog-posts-section">
+        <div class="blog-container">
+            <div class="blog-header">
+                <p class="all-posts">All Posts</p>
+            </div>
+
+            <!-- Blog Post 1 -->
+            <article class="blog-card">
+                <a href="blog/what-can-presentation-designers-do-for-you.html" class="blog-card-link">
+                    <div class="blog-card-image">
+                        <img src="assets/images/Blogs/Blog1.jpg" alt="Presentation designer pointing at colorful charts">
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="blog-card-content">
+                        <h2>What can presentation designers do for you?</h2>
+                        <p>We can all agree that if done right, PowerPoint is an excellent tool for delivering presentations in both the classroom and the...</p>
                     </div>
-                </div>
+                </a>
+            </article>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone">
+            <!-- Blog Post 2 -->
+            <article class="blog-card">
+                <a href="blog/why-should-you-hire-a-presentation-designer.html" class="blog-card-link">
+                    <div class="blog-card-image">
+                        <img src="assets/images/Blogs/Blog2.jpg" alt="Man working on laptop at desk">
                     </div>
-                    <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" id="company" name="company">
+                    <div class="blog-card-content">
+                        <h2>Why should you hire a presentation designer?</h2>
+                        <p>PowerPoint Presentations are ubiquitous in today's world. Chances are you've already created a ton of them yourself. So why hire a...</p>
                     </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="service">Service Interested In *</label>
-                    <select id="service" name="service" required>
-                        <option value="">Select a service</option>
-                        <option value="branding">Branding</option>
-                        <option value="presentations">Presentations</option>
-                        <option value="doodles">Doodles</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
-
-                <div class="form-group captcha-container">
-                    <div class="g-recaptcha" data-sitekey="6Lfx8RosAAAAAIiX69o03dVqsmU3pP0BijM30JMf"></div>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+                </a>
+            </article>
         </div>
-    </section>
-
-    <!-- Simple CTA Section -->
-    <section class="simple-cta-section">
-        <p>Have questions or want to start your next project?</p>
-        <p>Check out our <a href="faq.html">FAQ</a> or <a href="contact.html">Contact us</a></p>
-        <p>When all else fails, email prevails: <a href="mailto:design@pixupid.com">design@pixupid.com</a></p>
     </section>
 
     <!-- Footer -->
@@ -140,6 +115,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/contact.js"></script>
 </body>
 </html>
