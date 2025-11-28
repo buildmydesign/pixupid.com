@@ -1905,7 +1905,7 @@ footer::before {
 
 /* Blog Post Pages */
 .blog-post-header {
-    padding: 40px 0 20px 0;
+    padding: 40px 0 0 0;
     background: var(--light-blue);
 }
 
@@ -1938,7 +1938,7 @@ footer::before {
 }
 
 .blog-post-content {
-    padding: 40px 0 60px 0;
+    padding: 0 0 60px 0;
     background: var(--light-blue);
 }
 
