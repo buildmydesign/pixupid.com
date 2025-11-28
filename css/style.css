@@ -1358,8 +1358,6 @@ footer::before {
 .doodle-single {
     flex: 1;
     max-width: 400px;
-    background: white;
-    padding: 10px;
     text-align: center;
 }
 
@@ -1370,6 +1368,7 @@ footer::before {
     margin-bottom: 10px;
     font-weight: bold;
     text-align: center;
+    background: var(--light-blue);
 }
 
 .doodle-label.epic {
@@ -1382,6 +1381,17 @@ footer::before {
     color: var(--text-black);
     margin-bottom: 10px;
     text-align: center;
+    background: var(--light-blue);
+}
+
+.doodle-single img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    display: block;
+    background: white;
+    padding: 10px;
 }
 
 .doodle-features {
