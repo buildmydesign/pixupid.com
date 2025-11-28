@@ -1275,14 +1275,14 @@ footer::before {
 
 .doodle-pricing-header {
     display: flex;
-    justify-content: space-between;
-    max-width: 850px;
-    margin: 0 auto 10px auto;
-    padding: 0 50px;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 10px;
 }
 
 .pricing-column {
     text-align: center;
+    flex: 0 0 400px;
 }
 
 .doodle-type {
@@ -1307,7 +1307,7 @@ footer::before {
 .doodles-carousel-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 980px;
     margin: 0 auto;
     position: relative;
@@ -1315,9 +1315,18 @@ footer::before {
 }
 
 .doodles-carousel-container .carousel-arrow {
-    position: static;
-    transform: none;
-    margin: 0 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.doodles-carousel-container .carousel-arrow.left {
+    left: 20px;
+}
+
+.doodles-carousel-container .carousel-arrow.right {
+    right: 20px;
 }
 
 .doodles-carousel-item {
@@ -1343,7 +1352,7 @@ footer::before {
     gap: 30px;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    width: 100%;
 }
 
 .doodle-single {
